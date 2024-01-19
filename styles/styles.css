@@ -13,7 +13,7 @@ body {
     font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
     font-family: coalhandluke, sans-serif; /* this should be the rest of the output you got from Google Fonts */
   }
-  h1, a, img {
+  h1, h2, h3, h4, a {
     font-size: 60px;
     text-align: center;
   }
@@ -23,4 +23,5 @@ body {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
+      text-align: center
   }
