@@ -13,7 +13,7 @@ body {
     font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
     font-family: coalhandluke, sans-serif; /* this should be the rest of the output you got from Google Fonts */
   }
-  h1 {
+  h1, a,  {
     font-size: 60px;
     text-align: center;
   }
