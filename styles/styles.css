@@ -88,19 +88,19 @@ margin-right: auto;
 
 /* scrollable sections */
 /* Adding color to first section */
-#one {
+#poster {
 background-color: #F6F4EB;
 }
 /* Adding color to second section */
-#two {
+#talk {
 background-color: #91C8E4;
 }
 /* Adding color to third section */
-#three {
+#paper {
 background-color: #749BC2;
 }
 /* Adding color to fourth section */
-#four {
+#other_research {
 background-color: #4682A9;
 }
 /* General styling to our main section */
