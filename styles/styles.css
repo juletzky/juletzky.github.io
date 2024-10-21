@@ -89,19 +89,19 @@ margin-right: auto;
 /* scrollable sections */
 /* Adding color to first section */
 #one {
-background-color: #E6358B;
+background-color: #F6F4EB;
 }
 /* Adding color to second section */
 #two {
-background-color: #22A2AF;
+background-color: #91C8E4;
 }
 /* Adding color to third section */
 #three {
-background-color: #7CEC9F;
+background-color: #749BC2;
 }
 /* Adding color to fourth section */
 #four {
-background-color: #D8A928;
+background-color: #4682A9;
 }
 /* General styling to our main section */
 .content {
