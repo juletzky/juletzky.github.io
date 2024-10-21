@@ -1,27 +1,128 @@
-li:hover {
-    color: #F6E336;
-    width: 500px;
-  }
-  @font-face {
-    font-family: "coalhandluke";
-    src: url('../fonts/coalhandluke.ttf');
-  }
-  html {
-    background-color: #EFEEE1;
-  }
+@font-face {
+  font-family: "playfair-display";
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+html {
+  background-color: #f0efeb;
+}
 body {
-    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
-    font-family: coalhandluke, sans-serif; /* this should be the rest of the output you got from Google Fonts */
-  }
-  h1, h2, h3, h4, a {
-    font-size: 60px;
-    text-align: center;
-  }
-  
-  p,
-  li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-      text-align: center
-  }
+  font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: playfair-display, sans-serif; /* this should be the rest of the output you got from Google Fonts */
+}
+h2 {
+  font-size: 60px;
+  text-align: left;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+/* The navigation bar */
+.navbar {
+overflow: hidden;
+background-color: #f0efeb;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+border-bottom: 2px solid #1e3463;
+}
+
+/* Links inside the navbar */
+.navbar a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 8px 2%;
+text-decoration: none;
+font-size: 16px;
+margin: 12px 8%;
+border: 2px dotted #f0efeb;
+}
+
+/* Change border on mouse-over */
+.navbar a:hover {
+border: 2px dotted #1e3463;
+}
+
+.active {
+border: 2px dotted #1e3463;
+}
+
+
+/* Main content */
+.main {
+margin-left: 100px;
+margin-top: 100px;
+float: left;
+width: 40%;
+} 
+
+/* Main content */
+.heading {
+margin-left: 3%;
+margin-top: 100px;
+float: left;
+width: 80%;
+} 
+
+/* Image content */
+.container {
+margin-top: 200px;
+float: right;
+width: 50%;
+}
+
+.container img {
+width: 50%;
+height: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* scrollable sections */
+/* Adding color to first section */
+#one {
+background-color: #E6358B;
+}
+/* Adding color to second section */
+#two {
+background-color: #22A2AF;
+}
+/* Adding color to third section */
+#three {
+background-color: #7CEC9F;
+}
+/* Adding color to fourth section */
+#four {
+background-color: #D8A928;
+}
+/* General styling to our main section */
+.content {
+width: 97%;
+height: 60vh;
+display: flex;
+align-items: right;
+flex-wrap: nowrap;
+padding-left: 3%;
+padding-right: 0%;
+gap: 40px;
+overflow: auto;
+}
+/* Styling to each individual section */
+.section {
+width: 40%;
+height: 100%;
+flex: 0 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+}
+
