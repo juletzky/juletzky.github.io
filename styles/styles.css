@@ -1,90 +1,107 @@
 @font-face {
-  font-family: "verveine", sans-serif;
+  font-family: 'calistoga-regular';
+  src: url('../fonts/calistoga-regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.playfair-display-normal {
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-style: normal;
 }
+
 html {
   background-color: #f0efeb;
 }
 body {
-  font-size: 30px; /* px means "pixels": the base font size is now 10 pixels high */
-  font-family: verveine, sans-serif; 
-  font-variant: small-caps;
-  font-stretch: expanded;
-  *{
-    margin:0;
-}
+  font-size: 20px; 
+  font-family: 'Playfair Display', sans-serif; 
+  letter-spacing: 2px;
+  
 }
 h2 {
   font-size: 60px;
   text-align: left;
+  color: #44546A;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #44546A;
 }
 
 p,
 li {
   font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 a:link {
-  color: white;
+  color: #44546A;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: white;
+  color: #44546A;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: #44546A;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: white;
+  color: #44546A;
   background-color: transparent;
   text-decoration: underline;
 }
 
+/* Header */
+.header {
+  background-color: #f0efeb;
+  padding-right: 5%;
+  padding-left: 5%;
+}
 
+.header h3 {
+  text-align: left;
+  color: #44546A;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #44546A;
+}
 /* The navigation bar */
 .navbar {
-overflow: hidden;
+overflow: visible;
 background-color: #f0efeb;
-position: fixed; /* Set the navbar to fixed position */
-top: 0; /* Position the navbar at the top of the page */
-width: 100%; /* Full width */
-border-bottom: 2px solid #4D6AAA;
+width: 90%;
+margin: 0 auto;
+/* border-bottom: 2px solid #44546A;*/
 }
 
 /* Links inside the navbar */
 .navbar a {
-float: left;
-display: flex;
-color: #4D6AAA;
+color: #44546A;
 text-align: left;
-padding: 1px 1%;
+padding-right: 15%;
+padding-bottom: 5px;
 text-decoration: none;
-font-size: 30px;
-margin: 1px 1%;
-border: 1px dotted #f0efeb;
+font-size: 20px;
+border-bottom: 2px solid #44546A;
 }
 
-.nav-left {
-  float: left;
-}
-
-.nav-left ul a{
-  float: left;
-}
-
-.nav-right ul a {
-  float: right;
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Change border on mouse-over */
@@ -97,12 +114,13 @@ text-shadow: 1px 0 0 currentColor;
 }
 
 
+
 /* Main content */
 .main {
-margin-left: 100px;
-margin-top: 100px;
+margin-left: 5%;
+margin-top: 20px;
 float: left;
-width: 40%;
+width: 90%;
 } 
 
 /* Main content */
@@ -113,20 +131,27 @@ float: left;
 width: 80%;
 } 
 
-/* Image content */
-.container {
-margin-top: 200px;
-float: right;
+.left_column {
+  position: fixed;
+  bottom: 100px;
+  width: 45%;
+  float: left;
+  }
+  
+.right_column {
+  width: 45%;
+  float: right;
+  }
+.right_column1 {
 width: 50%;
+float: left;
 }
 
-.container img {
+.right_column2 {
 width: 50%;
-height: 50%;
-display: block;
-margin-left: auto;
-margin-right: auto;
+float: right;
 }
+
 
 /* scrollable sections */
 /* Adding color to first section */
@@ -168,3 +193,12 @@ justify-content: center;
 color: #ffffff;
 }
 
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  left: 5%;
+  text-align: center;
+  border-top: 2px solid #44546A;
+}

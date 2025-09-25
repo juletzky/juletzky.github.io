@@ -5,46 +5,56 @@
     <meta name="viewport" content="width=device-width" />
     <link href="styles/styles.css" rel="stylesheet" />
     <title>Home</title>
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'mqz8uuf',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header class="header">
+      <h3>Jule Nabrotzky</h3>
+    </header>
+
     <nav class="navbar">
-        <div class="nav-left">
-          <ul>
-            <a> Hi!</a> 
-          </ul> 
-        </div>
-        <div class="nav-right">
-          <ul>
-            <a class="active" href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-          </ul>
-        </div>
+        <ul>
+          <a class="active" href="index.html">Home</a>
+          <a href="affiliations.html">Affiliations</a>
+          <a href="research.html">Research</a>
+          <a href="about.html">Vita</a>
+        </ul>
       </nav> 
 
     <div class="main">
-      <h2> Jule Nabrotzky </h2>
-      <h3>PhD Student at the Max Planck Institute for Human Cognitive and Brain Sciences</h3>
-      <h3> M.A in Language and Linguistics, Specialisation Phonetics</h3>
-      <p> In my PhD, I'm trying to find evidence for the role of neural entrainment in achieving fast turn transitions.</p>
-     
+      <div class="left_column">
+        <h2> Hi there! </h2>
+        <h4> I'm a PhD student working on the role of rhythm and neural oscillations in shaping communicative interaction. I do experimental and corpus work investigating how quick turn transitions are facilitated by rhythmic sequences prior to the turn transition and what that might have to do with the brain.</h4>
+
+      </div>
+      <div class="right_column">
+        <div class="right_column1">
+          <p>Sep 2025</p>
+          <h4>Conference Talk</h4>
+          <p>I gave a short talk on my research at ESCOP 2025!</p>
+        </div>
+        <div class="right_column2">
+          <p>Sep 2025</p>
+          <h4>Conference Talk</h4>
+          <p>I gave a short talk on my research at ESCOP 2025!</p>
+        </div>
+      </div>
+      
+
+   
+
       <script src="scripts/main.js"></script>
     </div>
 
-  <div class="container">
-    <img src="images/Sun.png" alt="A picture of a sun with many flares surrounding it" />
-  </div>
+    <div class="footer">
+      <ul>
+        <a href="https://bsky.app/profile/juletzky.bsky.social">juletzky.bsky.social</a>
+        <a href="https://orcid.org/0009-0003-0312-253X">0009-0003-0312-253X</a>
+      </ul>
+    </div>
+
 
   
   </body>
