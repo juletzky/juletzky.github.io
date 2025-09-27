@@ -5,9 +5,16 @@
   font-style: normal;
 }
 
-.playfair-display-normal {
-  font-family: "Playfair Display", serif;
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+
+.krub-medium {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -16,27 +23,27 @@ html {
 }
 body {
   font-size: 20px; 
-  font-family: 'Playfair Display', sans-serif; 
-  letter-spacing: 2px;
+  font-family: 'Libre Baskerville', sans-serif; 
   
 }
 h2 {
   font-size: 60px;
   text-align: left;
   color: #44546A;
+  font-weight: 100;
 }
 
 h4 {
   font-size: 20px;
   text-align: left;
-  letter-spacing: 1px;
   color: #44546A;
+  font-weight: 100;
 }
 
 p,
 li {
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 a:link {
@@ -74,7 +81,7 @@ a:active {
   text-align: left;
   color: #44546A;
   padding-bottom: 5px;
-  border-bottom: 2px solid #44546A;
+  border-bottom: 3px solid #44546A;
 }
 /* The navigation bar */
 .navbar {
@@ -88,12 +95,15 @@ margin: 0 auto;
 /* Links inside the navbar */
 .navbar a {
 color: #44546A;
+font-family: 'Krub';
+letter-spacing: 1px;
 text-align: left;
-padding-right: 15%;
+width: 22.5%;
+/*padding-right: 15%;*/
 padding-bottom: 5px;
 text-decoration: none;
 font-size: 20px;
-border-bottom: 2px solid #44546A;
+border-bottom: 3px solid #44546A;
 }
 
 .navbar ul {
@@ -132,23 +142,26 @@ width: 80%;
 } 
 
 .left_column {
-  position: fixed;
   bottom: 100px;
-  width: 45%;
+  width: 42.5%;
   float: left;
+  position:fixed;
+  
   }
   
 .right_column {
-  width: 45%;
+  width: 48.5%;
   float: right;
+  padding-top: 5px;
+  padding-bottom: 20px;
   }
 .right_column1 {
-width: 50%;
+width: 46.7%;
 float: left;
 }
 
 .right_column2 {
-width: 50%;
+width: 46.7%;
 float: right;
 }
 
@@ -200,5 +213,5 @@ color: #ffffff;
   width: 90%;
   left: 5%;
   text-align: center;
-  border-top: 2px solid #44546A;
+  border-top: 3px solid #44546A;
 }
